@@ -12,7 +12,7 @@
 
 .logo{
     width: 300px;
-    height: 70px; 
+    height: 50px; 
 }
 
 .NavLink{
@@ -25,7 +25,7 @@
 
 .Link{
     font-weight: bolder; 
-    padding-top: 25px;
+    padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
     transform: skew(-25deg);
@@ -41,4 +41,24 @@
 a{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width:1024px){
+    
+.Link{
+  
+    padding-right: 10px;
+    
+
+}
+}
+
+
+@media screen and (max-width:920px) {
+    .Link{
+  
+        padding-right: 0;
+        
+    
+    }
 }
