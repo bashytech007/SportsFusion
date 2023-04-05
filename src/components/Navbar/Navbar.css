@@ -1,0 +1,44 @@
+.MainNav{
+    background-color: #ff6b00;   
+}
+.Nav{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding-right: 20px;
+    background-color: #ff6b00;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 300px;
+    height: 70px; 
+}
+
+.NavLink{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    height: 100%;
+   
+}
+
+.Link{
+    font-weight: bolder; 
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transform: skew(-25deg);
+    /* margin-top: 20px;     */
+
+}
+
+.Link:hover{
+    border-top: 5px solid black;
+    background: rgba(226, 103, 15, 0.7);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
