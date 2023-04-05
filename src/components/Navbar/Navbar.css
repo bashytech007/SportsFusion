@@ -18,14 +18,14 @@
 .NavLink{
     display: flex;
     list-style: none;
-    font-size: 15px;
+    font-size: 10px;
     height: 100%;
    
 }
 
 .Link{
     font-weight: bolder; 
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 30px;
     padding-right: 30px;
     transform: skew(-25deg);
