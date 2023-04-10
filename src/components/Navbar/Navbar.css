@@ -1,5 +1,8 @@
 .MainNav{
-    background-color: #ff6b00;   
+    background-color: #ff6b00;
+   
+    width: 100%; 
+    margin-bottom: 30px;
 }
 .Nav{
     width: 90%;
@@ -15,7 +18,7 @@
     height: 50px; 
 }
 
-.NavLink{
+.navigation-menu ul{
     display: flex;
     list-style: none;
     /* font-size: 10px; */
@@ -23,26 +26,47 @@
    
 }
 
-.Link{
-    font-weight: bolder; 
+.navigation-menu li{
+    font-weight: bold; 
     padding-top: 15px;
-    /* padding-left: 30px; */
+    padding-left: 30px;
     padding-right: 30px;
     transform: skew(-25deg);
     /* margin-top: 20px;     */
 
 }
 
-.Link:hover{
+.navigation-menu li:hover{
     border-top: 5px solid black;
     background: rgba(226, 103, 15, 0.7);
 }
 
-a{
+.navigation-menu li a{
     text-decoration: none;
     color: black;
 }
 
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color:  transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 4%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+.Nav-Community{
+    display: none;
+}
+  
 @media screen and (max-width:1024px){
     
 .Link{
@@ -62,3 +86,34 @@ a{
     
     }
 }
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navigation-menu ul {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navigation-menu ul {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+      background-color: #ff6b00;
+      transition: transform 0.7s ease-in-out;
+    }
+
+  }

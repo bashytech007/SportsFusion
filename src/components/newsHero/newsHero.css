@@ -1,0 +1,13 @@
+.news{
+  width: 70%;
+  border: 1px solid red;
+  height: 900px;
+}
+
+
+
+.mainNew{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}

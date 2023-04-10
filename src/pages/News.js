@@ -1,10 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/footer/Footer'
+import NewsHero from '../components/newsHero/newsHero'
 
 function News() {
   return (
     <div>
-    <Navbar/>
+      <NewsHero/>
+      <Footer/>
     </div>
   )
 }
