@@ -6,7 +6,7 @@ function OddsHero() {
   const [odd, setOdd] = useState([])
 
   const fetchOdd = async ()=>{
-    const response = await fetch('https://api.sportmonks.com/v3/football/odds/pre-match?api_token=P49FOARm6B5nBmvnAz2EGDbnPlgv5BdWGUWwFjFw2uUAjeU268BHrUR2ZZgM')
+    const response = await fetch('https://api.sportmonks.com/v3/football/odds/pre-match?api_token=')
     const odd = await response.json()
     console.log(odd)
     setOdd([odd])

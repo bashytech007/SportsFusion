@@ -7,7 +7,7 @@ function NewsHero() {
   const [sports, setSports] = useState([]);
 
  const fetchnews = async()=>{
-  const response = await fetch('https://widgets.oddspedia.com/api/matches?api_token=86e7c52e1f66d16e71987a86da5cb3e4b95bbedf863b24b0e13cc7c0fa1f&lang=en&sport_id=1&category_id=382&tournament_id=627&team_id=2538&type=list&popular-events')
+  const response = await fetch('https://widgets.oddspedia.com/api/matches?api_token=&lang=en&sport_id=1&category_id=382&tournament_id=627&team_id=2538&type=list&popular-events')
   const sports = await response.json()
   console.log(sports)
   setSports([sports])

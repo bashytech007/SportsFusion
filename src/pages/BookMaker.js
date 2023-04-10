@@ -4,7 +4,7 @@ function BookMaker() {
   const [bookmaker, setBookmaker] = useState([])
 
   const fetchBookMaker = async ()=>{
-    const response = await fetch('https://api.sportmonks.com/v3/odds/bookmakers?api_token=P49FOARm6B5nBmvnAz2EGDbnPlgv5BdWGUWwFjFw2uUAjeU268BHrUR2ZZgM')
+    const response = await fetch('https://api.sportmonks.com/v3/odds/bookmakers?api_token=')
     const bookmaker = await response.json()
     console.log(bookmaker)
     setBookmaker([bookmaker])
